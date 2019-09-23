@@ -1,6 +1,6 @@
 # PyContainer
 
-# I created this repository to create a basic flask application, containerize it with Docker, and then run that container image on a Google Kubernetes Engine cluster.
+I created this repository to create a basic flask application, containerize it with Docker, and then run that container image on a Google Kubernetes Engine cluster.
 
 # Below are the steps that I followed to make this happen and get the application accessible using Kubernetes:
 * The first thing that I did was create the application and the Dockerfile for it. Once the Dockerfile was good to go, I built the container image.
