@@ -1,11 +1,10 @@
 # Base Docker image we want to use for the container
 FROM alpine:3.1
-
-# Add Python to our Docker image
-RUN apk add
+FROM python:3
 
 # Install dependencies that have been defined in requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip
+RUN pip install flask
 
 # Bundle app source
 COPY app.py ./app.py
